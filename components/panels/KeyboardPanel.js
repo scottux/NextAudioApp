@@ -29,7 +29,7 @@ class KeyboardPanel extends React.Component {
 
         for (let i = 1; i<88; i++) {
             this.keys.push(
-                <button className={"key"} onMouseDown={this.props.playNote} onMouseUp={this.props.stopNote} value={this.getFrequency(i)}> {this.getNote(this.getFrequency(i))} </button>
+                <button className={"key"+(this.getNote(this.getFrequency(i)).includes("#") ? " sharp" : "")} onMouseDown={this.props.playNote} onMouseUp={this.props.stopNote} value={this.getFrequency(i)} title={this.getNote(this.getFrequency(i))}>  </button>
             );
         }
 

@@ -282,17 +282,14 @@ i {
   flex-flow: row;
 }
 .ui-panel button.key {
-  display: flex;
   background: #EEE;
   color: #111;
+	display: flex;
   flex-grow: 1;
+	padding: 1.5em .33em;
+	width: auto;
 }
 .ui-panel button.key.sharp {
   background: #111;
   color: #EEE;
-  flex-grow: .5;
 }
-
-
-
-
